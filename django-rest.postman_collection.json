@@ -1,0 +1,84 @@
+{
+	"id": "151eacc5-72a3-421e-bfed-dbad81aea0e7",
+	"name": "django-rest",
+	"description": null,
+	"auth": null,
+	"events": null,
+	"variables": [],
+	"order": [
+		"287e5d3e-82d5-4bdf-a8ab-61745c194b79",
+		"35d84967-783f-4159-9f17-f0f10ce6788c"
+	],
+	"folders_order": [],
+	"folders": [],
+	"requests": [
+		{
+			"id": "287e5d3e-82d5-4bdf-a8ab-61745c194b79",
+			"name": "登陆",
+			"url": "127.0.0.1:8000/login/",
+			"description": "登陆",
+			"data": [
+				{
+					"key": "username",
+					"value": "13439093625",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				},
+				{
+					"key": "password",
+					"value": "aijiangfen",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Content-Type",
+					"name": "Content-Type",
+					"value": "application/x-www-form-urlencoded",
+					"description": "",
+					"type": "text"
+				}
+			],
+			"method": "POST",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"headers": "Content-Type: application/x-www-form-urlencoded\n",
+			"pathVariables": {}
+		},
+		{
+			"id": "35d84967-783f-4159-9f17-f0f10ce6788c",
+			"name": "用户信息",
+			"url": "127.0.0.1:8000/user/1/",
+			"description": "用户信息",
+			"data": [],
+			"dataMode": "urlencoded",
+			"headerData": [
+				{
+					"key": "Authorization",
+					"value": "Token c42baf7b94f1e524dc9ccd1882efe545429db9ec",
+					"description": "",
+					"type": "text",
+					"enabled": true
+				}
+			],
+			"method": "GET",
+			"pathVariableData": [],
+			"queryParams": [],
+			"auth": null,
+			"events": null,
+			"folder": null,
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"headers": "Authorization: Token c42baf7b94f1e524dc9ccd1882efe545429db9ec\n",
+			"pathVariables": {}
+		}
+	]
+}
